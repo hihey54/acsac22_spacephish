@@ -1,0 +1,221 @@
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title data-i18n="LOGIN_PAGE_TITLE">Sign in with your MisiMokus account</title>
+	<meta name="google" content="notranslate">
+	<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" />
+	
+	<script nonce="5rLYY6EH">window._cstart=+new Date();</script>
+	<script nonce="5rLYY6EH">function envFlush(a){function b(b){for(var c in a)b[c]=a[c]}window.requireLazy?window.requireLazy(["Env"],b):(window.Env=window.Env||{},b(window.Env))}envFlush({"ajaxpipe_token":"asdf","timeslice_heartbeat_config":{"pollIntervalMs":33,"idleGapThresholdMs":60,"ignoredTimesliceNames":{"requestAnimationFrame":true,"Event listenHandler mousemove":true,"Event listenHandler mouseover":true,"Event listenHandler mouseout":true,"Event listenHandler scroll":true},"isHeartbeatEnabled":true,"isArtilleryOn":false},"shouldLogCounters":true,"timeslice_categories":{"react_render":true,"reflow":true},"sample_continuation_stacktraces":true,"dom_mutation_flag":true,"gk_instrument_object_url":true,"stack_trace_limit":30,"timesliceBufferSize":5000,"show_invariant_decoder":false,"compat_iframe_token":"AQ5RRPkvNCxPrUPvXhc","isCQuick":false});</script>
+	
+	<style>
+	  .panel-frame{
+	  <!-- border:2px solid transparent; -->
+	  border-image:linear-gradient(to top,#614a1f 0,#463714 5px,#463714 100%) 1 stretch;
+	  margin:1em 0;
+	  padding:0;
+	  position:absolute;
+	  left:25%;
+	  width:50%;
+	  }
+
+	  .panel-content{min-height:300px;}
+	  .panel-content
+	  .submit{padding-top:20px}
+
+	  input {
+	  width: 90%;
+	  padding: 12px;
+	  <!-- margin: 10px; -->
+	  box-sizing: border-box;
+	  border-radius: 10px;
+	  }
+
+	  footer {
+	  width: 90%;
+	  padding: 12px;
+	  }
+  
+	  html{
+	  font-family:sans-serif;
+	  -ms-text-size-adjust:100%;
+	  -webkit-text-size-adjust:100%
+	  }
+  
+	  body{
+	  margin:0;
+	  overflow-y:scroll;
+	  background-image: linear-gradient(#e6fff2, #8cd98c);
+	  }
+  
+	  article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
+	  display:block
+	  }
+  
+	  audio,canvas,progress,video{
+	  display:inline-block;vertical-align:baseline
+	  }
+
+	  audio:not([controls]){
+	  display:none;height:0
+	  }
+
+	  [hidden],template{
+	  display:none
+	  }
+
+	  a{background:transparent}
+	  a:active,a:hover{
+	  outline:0
+	  }
+
+	  abbr[title]{
+	  border-bottom:1px dotted
+	  }
+
+	  b,strong{
+	  font-weight:bold
+	  }
+
+	  dfn{font-style:italic}
+	  h1{font-size:2em;margin:.67em 0}
+	  mark{background:#ff0;color:#000}
+	  small{font-size:80%}
+	  sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+	  sup{top:-.5em}sub{bottom:-.25em}
+	  img{border:0}
+	  svg:not(:root){overflow:hidden}figure{margin:1em 40px}
+	  hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+	  pre{overflow:auto}
+	  code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+	  button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}
+	  button{overflow:visible}
+	  button,select{text-transform:none}
+	  button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+	  button[disabled],html input[disabled]{cursor:default}
+	  button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+	  input{line-height:normal}
+	  input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}
+	  input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+	  input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+	  input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+	  fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+	  legend{border:0;padding:0}
+	  textarea{overflow:auto}
+	  optgroup{font-weight:bold}
+	  table{border-collapse:collapse;border-spacing:0}
+	  td,th{padding:0}
+	  fieldset{padding:0;margin:0;border:0;min-width:0}
+	  legend{display:block;width:100%;padding:0;margin-bottom:20px;font-size:21px;line-height:inherit;color:#333;border:0;border-bottom:1px solid #e5e5e5}
+	  label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:bold}
+	  input[type="search"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+	  input[type="radio"],input[type="checkbox"]{margin:4px 0 0;margin-top:1px \9;line-height:normal}
+	  input[type="file"]{display:block}
+	  input[type="range"]{display:block;width:100%}
+	  select[multiple],select[size]{height:auto}
+	  input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+	  output{display:block;padding-top:7px;font-size:14px;line-height:1.428571429;color:#555}  
+	</style>
+  </head>
+  <body>
+
+	<div class="panel-frame" align="center">
+	  <div class="panel-content">
+		<h1>Login here into MisiMokus.com</h1>
+		<input name="Username" type="text" value="username"/>
+		<input name="Password" type="password" value="password"/>
+		<input name="submit" type="submit" value="Login"/>
+	  </div>
+
+	  <footer class="footer is-dark" id="footer">
+		<div class="container">
+		  <div class="footer-brand">
+			<a class="footer-logo-link" href="/"></a>
+			<!-- <button class="footer-i18n-selection is--hidden" data-type="currency" data-test-attribute="currency-picker" aria-label="Open currency picker"> -->
+			<!--   <span class="currency-symbol"></span> -->
+			<!--   <span class="currency-code"></span> -->
+			<!--   <span class="arrow-down-filled">&darr;</span> -->
+			<!-- </button> -->
+
+			<br class="only-tablet" />
+
+			<!-- <button class="footer-i18n-selection is--hidden" data-type="language" aria-label="Open language picker"> -->
+			<!--   <span class="language-code"></span> -->
+			<!--   <span class="arrow-down-filled">&darr;</span> -->
+			<!-- </button> -->
+
+			<hr><br>
+			<div class="footer-ssl is--hidden">
+			  <p class="footer-ssl__text">[Data traffic protected by SSL encryption]</p>
+			</div>
+		  </div>
+		  
+		  <nav class="footer-nav">
+			<div class="footer-nav-list">
+			  <h4 class="footer-nav-heading">
+				Products
+				<span class="arrow-down">&darr;</span>
+			  </h4>
+
+			  <div class="footer-nav-content">
+                <a class="is-borderless footer-nav-link " href="/templates"  data-test-attribute="footer-nav-website-templates">Templates</a> |
+                <a class="is-borderless footer-nav-link " href="/extensions/home"  data-test-attribute="footer-nav-extensions">Extensions</a> |
+                <a class="is-borderless footer-nav-link " href="/website-marketing"  data-test-attribute="footer-nav-marketing-tools">Marketing Tools</a> |
+                <a class="is-borderless footer-nav-link " href="/email-marketing"  data-test-attribute="footer-nav-email-marketing">Email Marketing</a> |
+                <a class="is-borderless footer-nav-link " href="/scheduling"  data-test-attribute="footer-nav-scheduling">Scheduling</a> |
+                <a class="is-borderless footer-nav-link " href="/marketing/unfold"  data-test-attribute="footer-nav-social-media-tools">Social Media Tools</a> |
+                <a class="is-borderless footer-nav-link " href="/professional-email"  data-test-attribute="footer-nav-professional-email">Professional Email</a> |
+                <a class="is-borderless footer-nav-link " href="/select"  data-test-attribute="footer-nav-premium-services">Premium Services</a> |
+                <a class="is-borderless footer-nav-link " href="/pricing"  data-test-attribute="footer-nav-pricing">Pricing</a> |
+                <a class="is-borderless footer-nav-link " href="/feature-index"  data-test-attribute="footer-nav-feature-list">Feature List</a>
+			  </div>
+			</div>
+			
+			<div class="footer-nav-list">
+			  <h4 class="footer-nav-heading">
+				Customers
+				<span class="arrow-down">&darr;</span>
+			  </h4>
+			  
+			  <div class="footer-nav-content">
+                <a class="is-borderless footer-nav-link " href="/showcase"  data-test-attribute="footer-nav-website-examples">Examples</a> |
+                <a class="is-borderless footer-nav-link " href="/sophia-bush"  data-test-attribute="footer-nav-featured-customers">Featured Customers</a> |
+                <a class="is-borderless footer-nav-link " href="/small-business-website"  data-test-attribute="footer-nav-businesses">Businesses</a> |
+                <a class="is-borderless footer-nav-link " href="/tour/restaurant-websites"  data-test-attribute="footer-nav-restaurants">Restaurants</a> |
+                <a class="is-borderless footer-nav-link " href="/websites/create-a-portfolio"  data-test-attribute="footer-nav-artists">Artists</a> |
+                <a class="is-borderless footer-nav-link " href="/websites/create-a-blog"  data-test-attribute="footer-nav-bloggers">Bloggers</a> |
+                <a class="is-borderless footer-nav-link " href="/tour/photography-websites"  data-test-attribute="footer-nav-photographers">Photographers</a> |
+                <a class="is-borderless footer-nav-link " href="/tour/wedding-website"  data-test-attribute="footer-nav-weddings">Weddings</a> |
+                <a class="is-borderless footer-nav-link " href="/enterprise"  data-test-attribute="footer-nav-enterprise">Enterprise</a> |
+                <a class="is-borderless footer-nav-link " href="/students"  data-test-attribute="footer-nav-students">Students</a>
+			  </div>
+			</div>
+    
+			<div class="footer-nav-list">
+			  <h4 class="footer-nav-heading">
+				Company
+				<span class="arrow-down">&darr;</span>
+			  </h4>
+
+			  <div class="footer-nav-content">
+                <a class="is-borderless footer-nav-link " href="/about/company"  data-test-attribute="footer-nav-about">About</a> |
+                <a class="is-borderless footer-nav-link " href="/about/careers"  data-test-attribute="footer-nav-careers">Careers</a> |
+                <a class="is-borderless footer-nav-link " href="/affiliates"  data-test-attribute="footer-nav-affiliates">Affiliates</a> |
+                <a class="is-borderless footer-nav-link " href="/press-coverage"  data-test-attribute="footer-nav-press-media">Press & Media</a> |
+                <a class="is-borderless footer-nav-link " href="/terms-of-service"  data-test-attribute="footer-nav-terms-of-service">Terms of Service</a> |
+                <a class="is-borderless footer-nav-link " href="/privacy"  data-test-attribute="footer-nav-privacy-policy">Privacy Policy</a> |
+                <a class="is-borderless footer-nav-link " href="/data-privacy"  data-test-attribute="footer-nav-data-privacy">Data Privacy</a> |
+                <a class="is-borderless footer-nav-link " href="/security"  data-test-attribute="footer-nav-security-measures">Security Measures</a> |
+                <a class="is-borderless footer-nav-link is--external" href="/contact" 
+                   target="_blank" rel="noopener"  data-test-attribute="footer-nav-contact-us">Contact Us<span class="footer-nav-link-arrow-container"></span></a> |
+                <a class="is-borderless footer-nav-link " href="/imprint"  data-test-attribute="footer-nav-imprint">Imprint</a>
+			  </div>
+			</div>
+		  </nav>
+		</div>
+	  </footer>
+	</div>
+  <a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a><a href="./fake-link-to-nonexisting-resource"><font style="visibility:hidden">Resource</font></a></body>
+</html>

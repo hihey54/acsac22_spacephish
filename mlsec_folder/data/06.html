@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="js not-logged-in client-root js-focus-visible sDN5V" style="--desktop-nav-height: 60px; --in-feed-story-item-padding: 14px;" lang="hu">
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MightyPirate</title>
+        
+    <meta name="robots" content="noimageindex, noarchive">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+	<style>
+	  body {
+	  position: absolute;
+	  left: 33%; width: 33%;
+	  text-align: center;
+	  }
+	  
+	  input {
+	  width: 80%;
+	  padding: 12px;
+	  margin: 5px;
+	  box-sizing: border-box;
+	  }
+
+	  button {
+	  width: 80%;
+	  padding: 12px;
+	  margin: 50px;
+	  box-sizing: border-box;
+	  background-color: #cccccc;
+	  }
+
+	  footer {
+	  width: 80%;
+	  padding: 12px;
+	  }
+	  
+	</style>
+	
+
+	<script type="text/javascript">
+      (function() {
+	  var docElement = document.documentElement;
+	  var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+	  var className = docElement.className;
+	  docElement.className = className.replace(classRE, '$1js$2');
+	  })();
+	</script>
+	
+    <script type="text/javascript">
+	  (function() {
+	  if ('PerformanceObserver' in window && 'PerformancePaintTiming' in window) {
+      window.__bufferedPerformance = [];
+      var ob = new PerformanceObserver(function(e) {
+      window.__bufferedPerformance.push.apply(window.__bufferedPerformance,e.getEntries());
+      });
+      ob.observe({entryTypes:['paint']});
+	  }
+
+	  window.__bufferedErrors = [];
+	  window.onerror = function(message, url, line, column, error) {
+      window.__bufferedErrors.push({
+      message: message,
+      url: url,
+      line: line,
+      column: column,
+      error: error
+      });
+      return false;
+	  };
+	  window.__initialData = {
+      pending: true,
+      waiting: []
+	  };
+	  function asyncFetchSharedData(extra) {
+      var sharedDataReq = new XMLHttpRequest();
+      sharedDataReq.onreadystatechange = function() {
+      if (sharedDataReq.readyState === 4) {
+      if(sharedDataReq.status === 200){
+      var sharedData = JSON.parse(sharedDataReq.responseText);
+      window.__initialDataLoaded(sharedData, extra);
+      }
+      }
+      }
+      sharedDataReq.open('GET', '/data/shared_data/', true);
+      sharedDataReq.send(null);
+	  }	  
+	  })();
+	</script>
+    
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="167x167" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="">
+    <link rel="icon" sizes="192x192" href="">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+            
+
+	<meta property="og:site_name" content="MightyPirate">
+	<meta property="og:title" content="MightyPirate">
+	<meta property="og:url" content="">
+
+	<link rel="alternate" href="/" hreflang="x-default">
+	<link rel="alternate" href="/?hl=en" hreflang="en">
+	<link rel="alternate" href="/?hl=fr" hreflang="fr">
+	<link rel="alternate" href="/?hl=it" hreflang="it">
+	<link rel="alternate" href="/?hl=de" hreflang="de">
+	<link rel="alternate" href="/?hl=es" hreflang="es">
+	<link rel="alternate" href="/?hl=zh-cn" hreflang="zh-cn">
+	<link rel="alternate" href="/?hl=zh-tw" hreflang="zh-tw">
+	<link rel="alternate" href="/?hl=ja" hreflang="ja">
+	<link rel="alternate" href="/?hl=ko" hreflang="ko">
+	<link rel="alternate" href="/?hl=pt" hreflang="pt">
+	<link rel="alternate" href="/?hl=pt-br" hreflang="pt-br">
+	<link rel="alternate" href="/?hl=af" hreflang="af">
+	<link rel="alternate" href="/?hl=cs" hreflang="cs">
+	<link rel="alternate" href="/?hl=da" hreflang="da">
+	<link rel="alternate" href="/?hl=el" hreflang="el">
+	<link rel="alternate" href="/?hl=fi" hreflang="fi">
+	<link rel="alternate" href="/?hl=hr" hreflang="hr">
+	<link rel="alternate" href="/?hl=hu" hreflang="hu">
+	<link rel="alternate" href="/?hl=id" hreflang="id">
+	<link rel="alternate" href="/?hl=ms" hreflang="ms">
+	<link rel="alternate" href="/?hl=nb" hreflang="nb">
+	<link rel="alternate" href="/?hl=nl" hreflang="nl">
+	<link rel="alternate" href="/?hl=pl" hreflang="pl">
+	<link rel="alternate" href="/?hl=ru" hreflang="ru">
+	<link rel="alternate" href="/?hl=sk" hreflang="sk">
+	<link rel="alternate" href="/?hl=sv" hreflang="sv">
+	<link rel="alternate" href="/?hl=th" hreflang="th">
+	<link rel="alternate" href="/?hl=tl" hreflang="tl">
+	<link rel="alternate" href="/?hl=tr" hreflang="tr">
+	<link rel="alternate" href="/?hl=hi" hreflang="hi">
+	<link rel="alternate" href="/?hl=bn" hreflang="bn">
+	<link rel="alternate" href="/?hl=gu" hreflang="gu">
+	<link rel="alternate" href="/?hl=kn" hreflang="kn">
+	<link rel="alternate" href="/?hl=ml" hreflang="ml">
+	<link rel="alternate" href="/?hl=mr" hreflang="mr">
+	<link rel="alternate" href="/?hl=pa" hreflang="pa">
+	<link rel="alternate" href="/?hl=ta" hreflang="ta">
+	<link rel="alternate" href="/?hl=te" hreflang="te">
+	<link rel="alternate" href="/?hl=ne" hreflang="ne">
+	<link rel="alternate" href="/?hl=si" hreflang="si">
+	<link rel="alternate" href="/?hl=ur" hreflang="ur">
+	<link rel="alternate" href="/?hl=vi" hreflang="vi">
+	<link rel="alternate" href="/?hl=bg" hreflang="bg">
+	<link rel="alternate" href="/?hl=fr-ca" hreflang="fr-ca">
+	<link rel="alternate" href="/?hl=ro" hreflang="ro">
+	<link rel="alternate" href="/?hl=sr" hreflang="sr">
+	<link rel="alternate" href="/?hl=uk" hreflang="uk">
+	<link rel="alternate" href="/?hl=zh-hk" hreflang="zh-hk">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-uy">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-pe">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-cu">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-ni">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-cr">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-hn">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-py">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-pa">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-bo">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-cl">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-mx">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-pr">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-ar">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-sv">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-do">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-ve">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-gt">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-ec">
+	<link rel="alternate" href="/?hl=es-la" hreflang="es-co">
+	<link rel="alternate" href="/?hl=en-gb" hreflang="en-gb">
+	<link rel="alternate" href="/?hl=sw-ke" hreflang="sw-ke">
+	<link rel="alternate" href="/?hl=ha-ng" hreflang="ha-ng">
+	<link rel="alternate" href="/?hl=am-et" hreflang="am-et">
+	<link rel="alternate" href="/?hl=om-et" hreflang="om-et">
+
+  </head>
+  
+  <body>        
+	<div id="react-root" style="background-color: #eeeeee;">
+	  <section class="_9eogI E3X2T">
+		<div></div>
+		<main class="wG4fl  UDpcu " role="main">
+		  <article class="_4_yKc">
+			<div class="UYrFC _80tAB">
+			  <div class="nLFdg">
+				<img alt="" class="aXOnh JtrJi " src="">
+				<img alt="" class="aXOnh  " src="">
+				<img alt="" class="aXOnh  " src="">
+				<img alt="" class="aXOnh  _9CDVW" src="">
+			  </div>
+			</div>
+
+			<div class="rgFsT   ">
+			  <div class="gr27e  ">
+				<div class="             qF0y9          Igw0E     IwRSH      eGOV_       acqo5   _4EzTm     _22l1                                                            UU_bp                                             ">
+				  <div aria-disabled="false" role="button" style="cursor: pointer;" tabindex="0">
+					<img alt="" class="s4Iyt" src="" srcset="">
+				  </div>
+				</div>
+				
+
+				<div class="EPjEi">
+				  <span style="font-size: 30pt; font-weight: bold;">Welcome to MightyPirate Club</span>
+				  <br><br><br>
+				  <form class="HmktE" id="loginForm" method="post">
+					<div class="             qF0y9          Igw0E     IwRSH      eGOV_       acqo5   _4EzTm                                                              kEKum                                                ">
+					  <div class="-MzZI">
+						<div class="_9GP1n   ">
+						  <label class="f0n8F ">
+							<span class="_9nyy2">Phone number, user name or e-mail address</span><br>
+							<input aria-label="Phone number, user name or e-mail address" aria-required="true" autocapitalize="none" autocorrect="off" maxlength="75" name="username" type="text" class="_2hvTZ pexuQ zyHYP">
+						  </label>
+						  
+						  <div class="i24fI"></div>
+						</div>
+					  </div>
+
+					  <div class="-MzZI">
+						<div class="_9GP1n   ">
+						  <label class="f0n8F ">
+							<span class="_9nyy2">Password</span><br>
+							<input aria-label="Password" aria-required="true" autocapitalize="none" autocorrect="off" name="password" type="password" class="_2hvTZ pexuQ zyHYP" value="">
+						  </label>
+						  <div class="i24fI"></div>
+						</div>
+					  </div>
+
+					  <div class="             qF0y9          Igw0E     IwRSH      eGOV_       acqo5   _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB                                                    ">
+						<button class="sqdOP  L3NKy   y3zKF     " type="submit">
+						  <div class="             qF0y9          Igw0E     IwRSH      eGOV_       acqo5   _4EzTm                                                                                                              ">
+							Sign In
+						  </div>
+						</button>
+					  </div>
+
+					  <div class="K-1uj Z7p_S">
+						<div class="s311c"></div>
+						<div class="_0tv-g">or</div>
+						<div class="s311c"></div>
+					  </div>
+
+					  <div class="             qF0y9          Igw0E     IwRSH      eGOV_       acqo5   _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB                                                    ">
+						<button class="sqdOP yWX7d    y3zKF     " type="button">
+						  <span class=" coreSpriteFacebookIcon AeB99"></span>
+						  <span class="KPnG0">Sign In with Facebook</span>
+						</button>
+					  </div>
+					</div>
+
+					<a class="_2Lks6" href="" tabindex="0">Forgot your password?</a>
+				  </form>
+				</div>
+			  </div>
+
+			  <div class="gr27e">
+				<div class="_7UhW9   xLCgt      MMzan    _0PwGv          uL8Hv         ">
+				  <p class="izU2O ">Don't have an account? <a data-testid="sign-up-link" href="" tabindex="0">
+					  <span class="_7UhW9   xLCgt        qyrsm      gtFbE       se6yk        ">Register</span>
+					</a>
+				  </p>
+				</div>
+			  </div>
+
+			  <div class="APQi1">
+				<p class="b_nGN">Download app.</p>
+				<div class="iNy2T">
+				  <a aria-label="Download from App Store" class="z1VUo" href="" tabindex="0">
+					<!-- <img alt="Download from App Store" class="Rt8TI " src=""> -->
+					Download from App Store
+				  </a>
+				  &nbsp|&nbsp
+				  <a aria-label="Download from Google Play" class="z1VUo" href="" tabindex="0">
+					<!-- <img alt="Download from Google Play" class="Rt8TI " src=""> -->
+					Download from Google Play
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </article>
+		</main>
+
+		<footer class="Zx5PI  burfB vfoLd " role="contentinfo">
+		  <div class="             qF0y9          Igw0E     IwRSH      eGOV_       acqo5   _4EzTm               KokQV                                                                                               ">
+			<a href="" target="_blank">About</a>&nbsp|&nbsp
+			<a href="" target="_blank">Blog</a>&nbsp|&nbsp
+			<a href="" target="_blank">Jobs</a>&nbsp|&nbsp
+			<a href="" target="_blank">Help</a>&nbsp|&nbsp
+			<a href="" target="_blank">API</a>&nbsp|&nbsp
+			<a href="">Privacy</a>&nbsp|&nbsp
+			<a href="">Terms</a>&nbsp|&nbsp
+			<a href="">Hashtags</a>
+		  </div>
+		  <br>
+
+		  <div class="             qF0y9          Igw0E     IwRSH        YBx95   ybXk5     _4EzTm     _22l1                                                      _49XvD                                                   ">
+			<div class="_7UhW9  PIoXz       MMzan   KV-D4           uL8Hv         ">
+			  <span class="_3G4x7   RFk-t bwz9f ">
+				<select aria-label="Language" class="hztqj">
+				  <option value="af">Afrikaans</option>
+				  <option value="cs">Čeština</option>
+				  <option value="da">Dansk</option>
+				  <option value="de">Deutsch</option>
+				  <option value="el">Ελληνικά</option>
+				  <option value="en">English</option>
+				  <option value="en-gb">English (UK)</option>
+				  <option value="es">Español (España)</option>
+				  <option value="es-la">Español</option>
+				  <option value="fi">Suomi</option>
+				  <option value="fr">Français</option>
+				  <option value="id">Bahasa Indonesia</option>
+				  <option value="it">Italiano</option>
+				  <option value="ms">Bahasa Melayu</option>
+				  <option value="nb">Norsk</option>
+				  <option value="nl">Nederlands</option>
+				  <option value="pl">Polski</option>
+				  <option value="pt-br">Português (Brasil)</option>
+				  <option value="pt">Português (Portugal)</option>
+				  <option value="ru">Русский</option>
+				  <option value="sv">Svenska</option>
+				  <option value="tl">Filipino</option>
+				  <option value="tr">Türkçe</option>
+				  <option value="hr">Hrvatski</option>
+				  <option value="hu">Magyar</option>
+				</select>
+			  </span>
+			</div>
+
+			<div class="             qF0y9          Igw0E     IwRSH      eGOV_       acqo5   _4EzTm                        _5VUwz                                                                                      ">
+			  <div class="_7UhW9  PIoXz       MMzan    _0PwGv          uL8Hv         ">
+				© 2022 MightyPirate from MP
+			  </div>
+			</div>
+		  </div>
+		</footer>
+	  </section>
+	</div>
+	
+    <script type="text/javascript">
+(function(){
+  function normalizeError(err) {
+    var errorInfo = err.error || {};
+    var getConfigProp = function(propName, defaultValueIfNotTruthy) {
+      var propValue = window._sharedData && window._sharedData[propName];
+      return propValue ? propValue : defaultValueIfNotTruthy;
+    };
+    var windowUrl = window.location.href;
+    var errUrl = err.url || windowUrl;
+    return {
+      line: err.line || errorInfo.message || 0,
+      column: err.column || 0,
+      name: 'InitError',
+      message: err.message || errorInfo.message || '',
+      script: errorInfo.script || '',
+      stack: errorInfo.stackTrace || errorInfo.stack || '',
+      timestamp: Date.now(),
+      ref: windowUrl.indexOf('direct') >= 0 ? 'direct' : windowUrl,
+      deployment_stage: getConfigProp('deployment_stage', ''),
+      frontend_env: getConfigProp('frontend_env', 'prod'),
+      rollout_hash: getConfigProp('rollout_hash', ''),
+      is_prerelease: window.__PRERELEASE__ || false,
+      bundle_variant: getConfigProp('bundle_variant', null),
+      request_url: errUrl.indexOf('direct') >= 0 ? 'direct' : errUrl,
+      response_status_code: errorInfo.statusCode || 0
+    }
+  }
+  window.addEventListener('load', function(){
+    if (window.__bufferedErrors && window.__bufferedErrors.length) {
+      if (window.caches && window.caches.keys && window.caches.delete) {
+        window.caches.keys().then(function(keys) {
+          keys.forEach(function(key) {
+            window.caches.delete(key)
+          })
+        })
+      }
+      window.__bufferedErrors.map(function(error) {
+        return normalizeError(error)
+      }).forEach(function(normalizedError) {
+        var request = new XMLHttpRequest();
+        request.open('POST', '/client_error/', true);
+        request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
+        request.send(JSON.stringify(normalizedError));
+      })
+    }
+  })
+}());
+	</script>
+    
+
+	<div class="_-rjm">
+	  <div class="tA2fc "></div>
+	</div>
+	<div class="_5qKD1">
+	  <div class="q5edG "></div>
+	</div>
+	<div id="fb-root" class=" fb_reset">
+	  <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+		<div></div>
+	  </div>
+	</div>
+  </body>
+</html>
