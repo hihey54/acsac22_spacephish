@@ -1,8 +1,3 @@
-# IMPORTANT!!!!!
-
-We have created an alternative (and de-anonymised) version of this repository that can be freely cloned, reachable at this link:
-https://bitbucket.org/hihey54/artifact_spacephish/src/master/
-
 This document describes the Artifact of the paper “SpacePhish: The Evasion-space of Adversarial Attacks against Phishing Website Detectors using Machine Learning”.
 
 ## Organization
