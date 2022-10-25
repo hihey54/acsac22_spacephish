@@ -13,7 +13,6 @@ python_whois==0.8.0
 requests==2.25.1
 scikit_learn==1.1.2
 scipy==1.7.3
-# seaborn==0.11.2
 tld==0.12.6
 tqdm==4.63.0
 whois==0.9.16
