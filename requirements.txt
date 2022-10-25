@@ -18,7 +18,6 @@ tld==0.12.6
 tqdm==4.63.0
 whois==0.9.16
 tensorflow==2.8.2
-# cv2==4.6.0
 bitly-api-py3
 
 
