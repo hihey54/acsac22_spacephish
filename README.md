@@ -1,10 +1,10 @@
-This document describes the Artifact of the paper “SpacePhish: The Evasion-space of Adversarial Attacks against Phishing Website Detectors using Machine Learning”.
+This document describes the Artifact of the paper “_SpacePhish: The Evasion-space of Adversarial Attacks against Phishing Website Detectors using Machine Learning_”. We also created a website with additional information: [SpacePhish website](https://spacephish.github.io/)
 
 ## Organization
 
 This repository includes four main folders: 
 
-* **documents_folder**: containing the main paper (in its most recent version---currently being shepherded), and other supplementary documents to assist in reviewing;
+* **documents_folder**: containing the main paper, and other supplementary documents;
 * **ml\_folder**: containing the source-code of our main experiments;
 * **preprocessing\_folder:** containing the code of our feature extractor and some attacks
 * **mlsec_folder**: containing the code of our attacks against the detectors of MLSEC;
@@ -33,7 +33,7 @@ We first explain the documents folder, then the data folder (which must be downl
 
 This folder contains 6 files:
 
-* _ACSAC_SpacePhish-paper.pdf_, which is the “latest” version of the paper
+* _ACSAC_SpacePhish-paper.pdf_, which is the main paper.
 * _ACSAC_SpacePhish-supp.pdf_, which is a document explaining (at a high level) some implementation details (this document was provided to the reviewers during the submission). 
 * _reference\_tables.png_, which is are three images showing the “range” of the results we obtained during our experiments (one for each algorithm). We expect that any future experiment will achieve results within (or close to) such range (we repeated our experiments 50 times).
 * _mlsec\_results.xlsx_, which is a spreadsheet containing the full results of *all* our cheap attacks on the detectors of the MLSEC competition.
@@ -93,3 +93,5 @@ Let us explain how to use our artifact.
 4. **Test the attacks.** Consider any of the three notebooks (e.g., “ml\_folder/experiments\_RF.ipynb”) and run all of its cells. The LR and RF do not take long to train, whereas the CN can take several minutes (the runtime on our platform is provided in the documentation). Every cell reports the part in the paper in which the corresponding result is “shown”. Due to randomness, the results can differ from those in the paper (which are provided just as the average and std. dev.): please refer to the “reference\_tables.png” file to assess the fidelity of a given result.
 5. **Check the MLSEC results.** Simply run the _mlsec\_folder/mlsec\_artifact\_checker.ipynb_ notebook, which will automatically query the MLSEC API and provides the results described in the supplementary material and reported in the _documents\_folder/results.xlsx_ file. The MLSEC API is still active, so these results are 100% reproducible (unless the ML-PWD change at the server side).
 6. **Play around with MLSEC notebook.** Run the _mlsec\_folder/mlsec\_artifact\_manipulate.ipynb_ notebook and see its effects on a specific webpage. Feel free to “visually” inspect the adversarial variant of any given webpage, as well as change the amount of links added, or the corresponding string. The MLSEC API is still active.
+
+
