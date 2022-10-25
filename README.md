@@ -1,5 +1,18 @@
 This document describes the Artifact of the paper “_SpacePhish: The Evasion-space of Adversarial Attacks against Phishing Website Detectors using Machine Learning_”. We also created a website with additional information: [SpacePhish website](https://spacephish.github.io/)
 
+
+If you use any of our resources, we kindly ask you to cite our paper with the following BibTeX entry:
+```
+@inproceedings{apruzzese2022spacephish,
+  title={SpacePhish: The Evasion-space of Evasion Attacks against Phishing Website Detectors using Machine Learning},
+  author={Apruzzese, Giovanni and Conti, Mauro and Yuan, Ying},
+  booktitle={Proceedings of the Annual Computer Security Applications Conference (ACSAC)},
+  year={2022},
+  publisher={ACM, New York, USA},
+  doi={10.1145/3564625.3567980}
+} 
+```
+
 ## Organization
 
 This repository includes four main folders: 
