@@ -12,9 +12,7 @@ import subprocess
 import logging 
 import time
 from bs4 import BeautifulSoup
-from tqdm import tqdm
 import matplotlib.pyplot as plt
-#import bitly_api
 import json
 import pandas as pd
 
