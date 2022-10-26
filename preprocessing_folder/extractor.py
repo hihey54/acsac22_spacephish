@@ -3,7 +3,6 @@ from IPy import IP
 import re
 from tld import get_tld,get_fld,parse_tld,is_tld
 import statistics
-from googlesearch import search
 from urllib.parse import urlparse
 import requests
 from datetime import datetime
