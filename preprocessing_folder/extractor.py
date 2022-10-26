@@ -8,10 +8,8 @@ import requests
 from datetime import datetime
 import nmap
 import subprocess
-import logging 
 import time
 from bs4 import BeautifulSoup
-import matplotlib.pyplot as plt
 import json
 import pandas as pd
 
