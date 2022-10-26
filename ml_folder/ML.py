@@ -3,9 +3,7 @@ import time
 import numpy as np
 from sklearn.feature_selection import SelectKBest,chi2,f_classif,RFE,SequentialFeatureSelector
 from sklearn.model_selection import train_test_split,GridSearchCV,cross_val_score,KFold,cross_val_predict,cross_validate
-import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
-from sklearn import svm,metrics,preprocessing,tree
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import metrics
 from collections import Counter
