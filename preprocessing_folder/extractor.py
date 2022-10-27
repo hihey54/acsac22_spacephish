@@ -12,6 +12,7 @@ import time
 from bs4 import BeautifulSoup
 import json
 import pandas as pd
+import logging
 
 '''
 This python script takes a given webpage as input, and proceeds to “extract” its feature representation by 
