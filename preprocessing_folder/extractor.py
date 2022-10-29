@@ -3,20 +3,16 @@ from IPy import IP
 import re
 from tld import get_tld,get_fld,parse_tld,is_tld
 import statistics
-from googlesearch import search
 from urllib.parse import urlparse
 import requests
 from datetime import datetime
 import nmap
 import subprocess
-import logging 
 import time
 from bs4 import BeautifulSoup
-from tqdm import tqdm
-import matplotlib.pyplot as plt
-#import bitly_api
 import json
 import pandas as pd
+import logging
 
 '''
 This python script takes a given webpage as input, and proceeds to “extract” its feature representation by 

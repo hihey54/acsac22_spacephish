@@ -1,24 +1,13 @@
 import pandas as pd
 import time
-from scipy.stats import pearsonr
 import numpy as np
 from sklearn.feature_selection import SelectKBest,chi2,f_classif,RFE,SequentialFeatureSelector
 from sklearn.model_selection import train_test_split,GridSearchCV,cross_val_score,KFold,cross_val_predict,cross_validate
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn import svm,metrics,preprocessing,tree
-from sklearn.neural_network import MLPClassifier 
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier,plot_tree
 from sklearn import metrics
 from collections import Counter
-from IPython.display import Image
-from factor_analyzer import FactorAnalyzer
-from factor_analyzer.factor_analyzer import calculate_kmo
 from sklearn.metrics import classification_report,confusion_matrix, recall_score,ConfusionMatrixDisplay,plot_confusion_matrix,precision_score,roc_curve,auc
-from sklearn.decomposition import PCA
 import json
 import joblib
 from scipy.stats import pearsonr
@@ -27,8 +16,6 @@ from tensorflow.keras.layers import Dense,Conv1D,Dropout,MaxPooling1D,Flatten
 from tensorflow.keras.optimizers import Adam
 import tensorflow as tf
 import os
-from matplotlib.patches import Rectangle
-import tensorflow as tf
 import random
 import operator
 #cnn models

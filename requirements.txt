@@ -1,6 +1,5 @@
 beautifulsoup4==4.11.1
 factor_analyzer==0.4.0
-googlesearch_python==1.1.0
 IPy==1.01
 ipython==8.5.0
 joblib==1.1.0
