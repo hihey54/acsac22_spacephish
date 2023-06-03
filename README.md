@@ -94,7 +94,7 @@ This folder contains the data and code for the attacks against the detectors of 
 
 * _data_, which is a folder containing the “original” webpages provided by MLSEC; as well as a subfolder “wsp” in which the adversarial variants of such originals will be saved (we already included all the variants generated via our WA attacks)
 * _mlsec\_artifact\_manipulate.ipynb_, which is a notebook containing _all_ the simple manipulations described in our supplementary material, as well as the queries to the MLSEC API 
-* _mlsec\_artifact\_checker.ipynb_, which is a notebook that provides a "bulk" checking of all the webpages (original and adversarial ones) created via the previous notebook
+* _mlsec\_artifact\_checker.ipynb_, which is a notebook that provides a "bulk" checking of all the webpages (original and adversarial ones) created via the previous notebook (UPDATE: Unfortunately, the MLSEC API is no longer supported by its developers after December'22, so this notebook will not work properly)
 
 ## INSTRUCTIONS
 
