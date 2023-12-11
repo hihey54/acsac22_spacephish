@@ -1,4 +1,4 @@
-This document describes the Artifact of the paper “_SpacePhish: The Evasion-space of Adversarial Attacks against Phishing Website Detectors using Machine Learning_”. We also created a website with additional information: [SpacePhish website](https://spacephish.github.io/)
+This document describes the Artifact of the paper “_SpacePhish: The Evasion-space of Adversarial Attacks against Phishing Website Detectors using Machine Learning_” and its extension “_Multi-SpacePhish: Extending the Evasion-space of Adversarial Attacks against Phishing Website Detectors using Machine Learning_". We also created a website with additional information: [SpacePhish website](https://spacephish.github.io/)
 
 
 If you use any of our resources, we kindly ask you to cite our paper with the following BibTeX entry:
@@ -15,12 +15,13 @@ If you use any of our resources, we kindly ask you to cite our paper with the fo
 
 ## Organization
 
-This repository includes four main folders: 
+This repository includes five main folders: 
 
 * **documents_folder**: containing the main paper, and other supplementary documents;
 * **ml\_folder**: containing the source-code of our main experiments;
-* **preprocessing\_folder:** containing the code of our feature extractor and some attacks
+* **preprocessing\_folder:** containing the code of our feature extractor and some attacks;
 * **mlsec_folder**: containing the code of our attacks against the detectors of MLSEC;
+* **DTRAP_extention**: containing the new experiments on multiple evasion-spaces in our DTRAP paper. 
 
 In the root folder of this repository, we have also provided a “requirements.txt” file, specifying which Python libraries were used to carry out all our experiments. Moreover, we also provided a document ("get\_data.md") explaining how to retrieve the data for our experiments. This artifact entirely runs on CPU.
 
@@ -95,6 +96,13 @@ This folder contains the data and code for the attacks against the detectors of 
 * _data_, which is a folder containing the “original” webpages provided by MLSEC; as well as a subfolder “wsp” in which the adversarial variants of such originals will be saved (we already included all the variants generated via our WA attacks)
 * _mlsec\_artifact\_manipulate.ipynb_, which is a notebook containing _all_ the simple manipulations described in our supplementary material, as well as the queries to the MLSEC API 
 * _mlsec\_artifact\_checker.ipynb_, which is a notebook that provides a "bulk" checking of all the webpages (original and adversarial ones) created via the previous notebook (UPDATE: Unfortunately, the MLSEC API is no longer supported by its developers after December'22, so this notebook will not work properly)
+  
+### DTRAP\_extension
+This folder includes 3 files, which refer to new experiments conducted in multi-spaces we mentioned in our DTRAP paper:
+* _perturbations.py_: this python script generate all new perturbations we mentioned in our DTRAP paper, either for URL or for HTML.
+* _singlespace_perturbations.ipynb_: which is a notebook showing how we generate phishing samples on single evasion-space.
+* _multispace_perturbations.ipynb_: demostrate samples generation on multiple evasion-spaces, which consider attacks entailing two perturbations both in the same space and the different spaces.
+
 
 ## INSTRUCTIONS
 
@@ -102,7 +110,9 @@ Let us explain how to use our artifact.
 
 1. **Get the data, and install requirements**. This is self explanatory; we recommend creating an ad-hoc virtual environment for this purpose (PyCharm works very well). Important: the _data\_folder_ should be placed in the root directory!
 2. **Test the feature extractor.** Simply run the _preprocessing\_folder/feature\_extraction.ipynb_ notebook once. It should prove that the feature extractor “works”.
-3. **Create the adversarial samples corresponding to PA**. Simply run the _preprocessing\_folder/PA\_PSP.ipynb_ once.
+3. **Create the adversarial samples**
+   * corresponding to PA. Simply run the _preprocessing\_folder/PA\_PSP.ipynb_ once.
+   * corresponding to multi-spaces attacks. Simply run _multispace_perturbations.ipynb_ once.
 4. **Test the attacks.** Consider any of the three notebooks (e.g., “ml\_folder/experiments\_RF.ipynb”) and run all of its cells. The LR and RF do not take long to train, whereas the CN can take several minutes (the runtime on our platform is provided in the documentation). Every cell reports the part in the paper in which the corresponding result is “shown”. Due to randomness, the results can differ from those in the paper (which are provided just as the average and std. dev.): please refer to the “reference\_tables.png” file to assess the fidelity of a given result.
 5. **Check the MLSEC results.** Simply run the _mlsec\_folder/mlsec\_artifact\_checker.ipynb_ notebook, which will automatically query the MLSEC API and provides the results described in the supplementary material and reported in the _documents\_folder/results.xlsx_ file. The MLSEC API is still active, so these results are 100% reproducible (unless the ML-PWD change at the server side).
 6. **Play around with MLSEC notebook.** Run the _mlsec\_folder/mlsec\_artifact\_manipulate.ipynb_ notebook and see its effects on a specific webpage. Feel free to “visually” inspect the adversarial variant of any given webpage, as well as change the amount of links added, or the corresponding string. The MLSEC API is still active.
